@@ -8,3 +8,8 @@ variable "name" {
   type        = string
   description = "The name of the resource group to create"
 }
+
+variable "tags" {
+  type        = map(any)
+  description = "A mapping of tags to assign to the resource"
+}
