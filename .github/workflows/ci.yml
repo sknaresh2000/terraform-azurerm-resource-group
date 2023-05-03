@@ -14,5 +14,5 @@ permissions:
 
 jobs:
   build:
-    uses: sknaresh2000/templates/.github/workflows/tf-ci.yml@main
+    uses: sknaresh2000/templates/.github/workflows/tf-ci.yaml@main
     secrets: inherit
