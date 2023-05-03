@@ -16,4 +16,3 @@ jobs:
   build:
     uses: sknaresh2000/templates/.github/workflows/tf-ci.yml@main
     secrets: inherit
-
