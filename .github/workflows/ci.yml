@@ -1,0 +1,19 @@
+name: 'CI Workflow'
+on:
+  push:
+    branches:
+    - main
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    uses: sknaresh2000/templates/.github/workflows/tf-ci.yml@main
+    secrets: inherit
+
