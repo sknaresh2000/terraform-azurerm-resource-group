@@ -18,4 +18,5 @@ jobs:
     secrets: inherit
   deploy:
     uses: sknaresh2000/templates/.github/workflows/tf-cd.yml@main
+    needs: build
     secrets: inherit
