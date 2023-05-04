@@ -1,4 +1,5 @@
-name: 'GitHub Workflow'
+name: 'Terraform Module Workflow'
+
 on:
   push:
     branches:
