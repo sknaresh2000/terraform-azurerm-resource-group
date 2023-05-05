@@ -14,10 +14,6 @@ permissions:
   contents: read
 
 jobs:
-  build:
-    uses: sknaresh2000/templates/.github/workflows/tf-vault-ci.yml@main
-    secrets: inherit
-  deploy:
-    uses: sknaresh2000/templates/.github/workflows/tf-vault-cd.yml@main
-    needs: build
+  tf_build_deploy:
+    uses: sknaresh2000/templates/.github/workflows/tf-vault.yml@main
     secrets: inherit
