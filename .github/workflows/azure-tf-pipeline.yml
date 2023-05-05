@@ -14,6 +14,6 @@ permissions:
   contents: read
 
 jobs:
-  tf_build_deploy:
+  rg_build_deploy:
     uses: sknaresh2000/templates/.github/workflows/tf-vault.yml@main
     secrets: inherit
